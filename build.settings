@@ -1,0 +1,67 @@
+--
+-- For more information on build.settings see the Corona SDK Build Guide at:
+-- http://docs.coronalabs.com/guide/distribution/buildSettings/index.html
+--
+
+settings =
+{
+	orientation =
+	{
+		default = "portrait",
+		supported = { "portrait" }
+	},
+	iphone =
+	{
+		plist =
+		{
+			UIStatusBarHidden = false,
+			UIApplicationExitsOnSuspend = true,
+			CFBundleIconFiles =
+			{
+				"icon_57x57.png", 
+				"icon_72x72.png", 
+				"icon_76x76.jpg",
+				"icon_76x76.png",
+				"icon_120x120.png",
+				"icon_120x120.jpg",
+				"icon_152x152.png", 
+				"icon_152x152.jpg",
+				"icon_167x167.jpg",
+				"icon_180x180.jpg",
+				"icon_1024x1024.jpg",
+				"iTunesArtwork.jpg", 
+				"Lnch_640x960.png",
+				"Lnch_768x1024.png",
+				"Lnch_1536x2048.png",
+				"Lnch_2048x2732.png",
+				"set_29x29.png", 
+				"set_58x58.png",
+				"set_87x87.png", 
+				"spt_60x60.png",
+				"spt_80x80.png"
+			},
+			UILaunchImages = 
+			{
+				{  -- iPhone 4 Portrait
+                    ["UILaunchImageMinimumOSVersion"] = "7.0",
+                    ["UILaunchImageName"] = "Default",
+                    ["UILaunchImageOrientation"] = "Portrait",
+                    ["UILaunchImageSize"] = "{320, 480}"
+                },
+                {  -- iPad Portrait
+                    ["UILaunchImageMinimumOSVersion"] = "7.0",
+                    ["UILaunchImageName"] = "Default-Portrait",
+                    ["UILaunchImageOrientation"] = "Portrait",
+                    ["UILaunchImageSize"] = "{768, 1024}"
+                },
+			},
+		},
+	},
+	window =
+	{
+		titleText =
+		{
+			default = "Composer",
+		},
+	},
+}
